@@ -7,7 +7,7 @@ import CardCharacter from '../CardCharacter'
 
 export const CardEpisode = (props) => {
   // eslint-disable-next-line react/prop-types
-  const { data , boolCharacter, onHandleCharacter} = props
+  const { data , onHandleCharacter, characterId} = props
   
   console.log('Entrada de card:', data)
   return (
@@ -23,11 +23,11 @@ export const CardEpisode = (props) => {
                   <h3>Episode: {info.episode}</h3>
                   <p>Fecha de estreno: {info.air_date}</p>
                 </div>
-                <span className="material-symbols-rounded" onClick={onHandleCharacter}>chevron_right</span>
+                <span className="material-symbols-rounded" onClick={onHandleCharacter} data-key= {info.id}>chevron_right</span>
 
               </div>
               <div>
-                {boolCharacter && <CardCharacter characters = {info.characters}/>} 
+                {parseInt(characterId) === parseInt(info.id) && <CardCharacter characters = {info.characters} />} 
               </div>
             </>
 

@@ -9,3 +9,4 @@ const instance = axios.create({
 const fetcher = url => instance.get(url).then(res => res.data)
 
 export default fetcher
+

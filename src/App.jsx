@@ -10,10 +10,15 @@ import { useState } from 'react';
 function App() {
   const url = '/episode/1,2,3,4,5,6,7,8,9,10';
   const { data, error, isLoading } = useSWR(url, fetcher)
-  const [boolCharacter, setBoolCharacter] = useState(false)
+  const [characterId, setcharacterId] = useState()
   
-  const handleCharacters= ()=>{
-    setBoolCharacter(true)
+  const handleCharacters= (event)=>{
+    setcharacterId(event.currentTarget.dataset.key)
+    const episode = data.filter((element) =>{
+      return element.id === parseInt(event.currentTarget.dataset.key)
+    });
+
+    console.log('Este es el episodio seleccionado: ', episode)
   }
   if (error) return <div>failed to load</div>
   if (isLoading) return <div>loading...</div>
@@ -28,7 +33,7 @@ function App() {
   return (
     <>
       <div>
-        {data?<CardEpisode data = {data} boolCharacter = {boolCharacter} onHandleCharacter = {handleCharacters}/>: <p>Loading ...</p>}
+        {data?<CardEpisode data = {data} characterId = {characterId} onHandleCharacter = {handleCharacters}/>: <p>Loading ...</p>}
       </div>
     </>
   )
