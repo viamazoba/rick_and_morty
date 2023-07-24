@@ -84,9 +84,9 @@ Enhance the user interface and user experience to make it more intuitive and app
 ## Useful Resources :sos:
 During the development of this project, the following resources were helpful:
 
-Official React documentation: https://reactjs.org/docs
-Official Sass documentation: https://sass-lang.com/documentation
-Rick and Morty API: https://rickandmortyapi.com/documentation
+- Official React documentation: https://reactjs.org/docs
+- Official Sass documentation: https://sass-lang.com/documentation
+- Rick and Morty API: https://rickandmortyapi.com/documentation
 
 ## Author :nerd_face:
 This project was created by viamazoba. You can find my GitHub profile at the following link:
