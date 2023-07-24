@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 80rem;
+    }
 }
 
 .container__episodes{
@@ -10,11 +16,17 @@
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    width: 22rem;
+    width: 21rem;
     height: 8rem;
     border-radius: 10px;
     padding: 0.5rem;
     transition: transform 0.3s ease;
+    background-color: rgba(73, 88, 103, 0.9);
+    color: white;
+    margin: 0.1rem 0rem;
+    &:hover{
+        background-color: rgba(144, 41, 35, 0.8);
+    }
     span{
         font-size: 50px;
     }
@@ -29,7 +41,8 @@
         line-height: 0.3rem;
     }
 
-    p{
+    p{  
+        font-size: 0.9rem;
         line-height: 1.2rem;
     }
 
@@ -41,6 +54,8 @@
         transform: translateY(10px);
        
     }
+
+   
 }
 
 .material-symbols-rounded {
@@ -50,4 +65,19 @@
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
+}
+
+.rotate-icon {
+transform-origin: center;
+}
+  
+.rotate-icon.rotated {
+/* Aplicar la rotación de 90 grados hacia abajo */
+transform: rotate(90deg);
+transition: transform 0.3s ease;
+}
+
+.container__characters-episode{
+    // margin: 1.5rem 0rem;
+    width: 20rem;
 }

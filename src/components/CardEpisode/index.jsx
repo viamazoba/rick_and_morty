@@ -7,7 +7,7 @@ import CardCharacter from '../CardCharacter'
 
 export const CardEpisode = (props) => {
   // eslint-disable-next-line react/prop-types
-  const { data , onHandleCharacter, characterId} = props
+  const { data , onHandleCharacter, characterId, isRotated} = props
   
   console.log('Entrada de card:', data)
   return (
@@ -23,10 +23,10 @@ export const CardEpisode = (props) => {
                   <h3>Episode: {info.episode}</h3>
                   <p>Fecha de estreno: {info.air_date}</p>
                 </div>
-                <span className="material-symbols-rounded" onClick={onHandleCharacter} data-key= {info.id}>chevron_right</span>
+                <span className={`material-symbols-rounded ${isRotated && parseInt(characterId) === parseInt(info.id)? 'rotate-icon rotated' : ''}`} onClick={onHandleCharacter} data-key= {info.id}>chevron_right</span>
 
               </div>
-              <div>
+              <div className='container__characters-episode'>
                 {parseInt(characterId) === parseInt(info.id) && <CardCharacter characters = {info.characters} />} 
               </div>
             </>
