@@ -15,6 +15,8 @@
 ## Overview :writing_hand:
 This project was developed as part of a pair programming exercise. It involves building a CRUD application using React. The main goal was to utilize React states, specifically `useSWR`, along with libraries like Axios and methods like `Promise.all()` to make individual and parallel API calls to the "Rick and Morty" API. Additionally, the project aimed to enhance skills in using Sass for styling.
 
+The link of the application deployed in vercel: [Deployed Project](https://rick-and-morty-obeta.vercel.app/)
+
 ### Installation :gear:
 To get started with the project, follow these steps:
 
@@ -38,15 +40,17 @@ npm install
 npm run dev
 ```
 
-### The Challenge :weight_lifting_man:
+## The Challenge :weight_lifting_man:
 The challenge of this application was to utilize React states effectively, specifically using useSWR, along with libraries like Axios and methods like Promise.all() for making individual and parallel API calls to the "Rick and Morty" API. Additionally, improving skills in Sass for styling was part of the challenge.
 
-### Screenshot 📷 
+## Screenshot 📷 
 Here is a screenshot of the project's interface:
 
 **1. Web View**
 
 ![Alt text](./public/desktop_0.png)
+
+
 ![Alt text](./public/desktop_1.png)
 
 **2. Mobile View**
@@ -54,8 +58,8 @@ Here is a screenshot of the project's interface:
 ![Alt text](./public/mobile_0.png)
 ![Alt text](./public/mobile_1.png)
 
-### My Process :mountain:
-## Built With :hammer_and_wrench:
+## My Process :mountain:
+### Built With :hammer_and_wrench:
 The project was built using the following technologies:
 
 - React
@@ -77,13 +81,13 @@ Implement user authentication to secure product management actions.
 Add filtering and search functionalities based on the API to facilitate product exploration.
 Enhance the user interface and user experience to make it more intuitive and appealing.
 
-### Useful Resources :sos:
+## Useful Resources :sos:
 During the development of this project, the following resources were helpful:
 
 Official React documentation: https://reactjs.org/docs
 Official Sass documentation: https://sass-lang.com/documentation
 Rick and Morty API: https://rickandmortyapi.com/documentation
 
-### Author :nerd_face:
+## Author :nerd_face:
 This project was created by viamazoba. You can find my GitHub profile at the following link:
 - [viamazoba](https://github.com/viamazoba)
